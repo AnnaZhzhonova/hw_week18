@@ -123,11 +123,13 @@ document.querySelector('.b-9').addEventListener ('click', makeNine);
 //Подсказка: Для преобразования массива в строку используйте метод JSON.stringify()
 
 function makeTen() {
-	//Ваш код
+	arr = ["яблоко", "банан", "апельсин"];
+	const array = JSON.stringify(arr);
+	localStorage.setItem('arrayTen', array);
 	console.log('Массив arr был записан в Local Storage.');
 }
 
-//добавьте слушатель события
+document.querySelector('.b-10').addEventListener ('click', makeTen);
 
 //Задание 11
 //Создайте функцию makeEleven, которая сохраняет в Local Storage по ключу arrayEleven массив arr = [
